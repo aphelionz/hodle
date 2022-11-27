@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLE</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>HODLE</h1>
+    <h2>Guess the cryptocurrency from today's top 100</h2>
+    
+    <div id="stats" class="stats hidden">
+        <dl>
+            <dt>Price (USD)</dt> <dd id="price_usd"></dd>
+            <dt>Market Cap</dt> <dd id="market_cap"></dd>
+            <dt>Volume (24h USD)</dt> <dd id="volume_24h"></dd>
+            <dt>Circulating Supply</dt> <dd id="circulating_supply"></dd>
+            <dt>Total Supply</dt> <dd id="total_supply"></dd>
+            <dt>Max Supply</dt> <dd id="max_supply"></dd>
+        </dl>
+
+        <div>Tags</div>
+        <ul id="tags">
+        </ul>
+    </div>
+
+    <form id="guesses" class="guesses hidden">
+        <input list="coinlist" type="text" name="guess[]" />
+        <input list="coinlist" type="text" name="guess[]" disabled />
+        <input list="coinlist" type="text" name="guess[]" disabled />
+        <input list="coinlist" type="text" name="guess[]" disabled />
+        <input list="coinlist" type="text" name="guess[]" disabled />
+        <input list="coinlist" type="text" name="guess[]" disabled />
+
+        <datalist id="coinlist"></datalist>
+        <datalist id="visibleTags"></datalist>
+
+        <input type="submit" value="check" />
+    </form>
+    
+    <footer>
+        Created by Equilibrium. We're hiring!
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

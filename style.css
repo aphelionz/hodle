@@ -1,0 +1,6 @@
+body { max-width: 500px; margin: 0 auto; }
+
+.guesses { padding: 1rem; text-align: center; }
+.guesses > input { width: 100%; margin: 0.37rem 0; }
+
+.hidden { display: none }
