@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hodle"
+version = "0.1.0"
+description = ""
+authors = ["Mark Henderson <mark@mrh.io>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+prospector = "^1.7.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
